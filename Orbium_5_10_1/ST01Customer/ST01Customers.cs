@@ -33,7 +33,7 @@ namespace ST01Desktop
         [SetUp]
         public void SetUp()
         {
-            driver = Comandos.GetBrowserLocal(driver, "chrome");
+            driver = Comandos.GetBrowserRemote(driver, "chrome", "http://192.168.0.106:5556/wd/hub");
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             js = (IJavaScriptExecutor)driver;
