@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="2" result="Failed" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="1" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-06-29 00:01:09Z" end-time="2020-06-29 00:01:43Z" duration="33.706554">
+  <command-line><![CDATA[C:\working\Orbium_5_10_1\Orbium_5_10_1\packages\NUnit.ConsoleRunner.3.11.1\tools\nunit3-console.exe  "C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\bin\Debug\Orbium_5_10_1.dll" --result="CT01CustomerEdit.xml;format=nunit3" --work=".\xml]]></command-line>
+  <test-suite type="Assembly" id="0-1004" name="Orbium_5_10_1.dll" fullname="C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\bin\Debug\Orbium_5_10_1.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-06-29 00:01:10Z" end-time="2020-06-29 00:01:43Z" duration="32.941493" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\Report Test" machine-name="48594789-PC" user="48594789" user-domain="48594789-PC" culture="pt-BR" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value=".\xml" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="13484" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1005" name="ST01CustomerEdit" fullname="ST01CustomerEdit" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-06-29 00:01:10Z" end-time="2020-06-29 00:01:43Z" duration="32.914470" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1002" name="CT01ValidarLayout" fullname="ST01CustomerEdit.CT01ValidarLayout" classname="ST01CustomerEdit.CT01ValidarLayout" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-06-29 00:01:10Z" end-time="2020-06-29 00:01:26Z" duration="15.922911" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1003" name="CT01ValidarLayoutTela" fullname="ST01CustomerEdit.CT01ValidarLayout.CT01ValidarLayoutTela" methodname="CT01ValidarLayoutTela" classname="ST01CustomerEdit.CT01ValidarLayout" runstate="Runnable" seed="1830202565" result="Failed" label="Error" start-time="2020-06-29 00:01:10Z" end-time="2020-06-29 00:01:26Z" duration="15.909037" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverException : unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from no such window
+  (Session info: chrome=83.0.4103.116)]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteTargetLocator.Frame(Int32 frameIndex)
+   at ST01CustomerEdit.CT01ValidarLayout.CT01ValidarLayoutTela() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST01Customer\CT01ValidarLayout.cs:line 65]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1000" name="CT02ValidarCamposObrigatorios" fullname="ST01CustomerEdit.CT02ValidarCamposObrigatorios" classname="ST01CustomerEdit.CT02ValidarCamposObrigatorios" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-06-29 00:01:26Z" end-time="2020-06-29 00:01:43Z" duration="16.982384" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="0-1001" name="CT01ValidarCamposObrigatoriosTela" fullname="ST01CustomerEdit.CT02ValidarCamposObrigatorios.CT01ValidarCamposObrigatoriosTela" methodname="CT01ValidarCamposObrigatoriosTela" classname="ST01CustomerEdit.CT02ValidarCamposObrigatorios" runstate="Runnable" seed="553879910" result="Passed" start-time="2020-06-29 00:01:26Z" end-time="2020-06-29 00:01:43Z" duration="16.982154" asserts="1" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

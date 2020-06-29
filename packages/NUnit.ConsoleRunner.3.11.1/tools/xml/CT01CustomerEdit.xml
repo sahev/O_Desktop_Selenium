@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run start-time="2020-06-28 23:52:48Z">
+  <command-line><![CDATA[nunit3-console.exe  "C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\bin\Debug\Orbium_5_10_1.dll" --result="CT01CustomerEdit.xml;format=nunit3" --work=".\xml]]></command-line>
+</test-run>

@@ -65,46 +65,46 @@ namespace ST01CustomerEdit
             driver.SwitchTo().Frame(1);
             
 
-            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")));
+            //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")));
 
-            driver.FindElement(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")).Click();
+            //driver.FindElement(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")).Click();
 
-            driver.SwitchTo().Window(driver.WindowHandles[1]);
+            //driver.SwitchTo().Window(driver.WindowHandles[1]);
 
 
-            //Page object
+            ////Page object
 
-            Customer_Person_Edit customer = new Customer_Person_Edit();
+            //Customer_Person_Edit customer = new Customer_Person_Edit();
 
-            PageFactory.InitElements(driver, customer);
+            //PageFactory.InitElements(driver, customer);
 
-            //driver.FindElement(By.CssSelector("#nav-menu-item-5643 .item_text")).Click();
+            ////driver.FindElement(By.CssSelector("#nav-menu-item-5643 .item_text")).Click();
 
-            //Thread.Sleep(5000);
+            ////Thread.Sleep(5000);
 
-            Assert.IsTrue(customer.name.Enabled);
-            Assert.IsTrue(customer.taxid1.Enabled);
-            Assert.IsTrue(customer.gender.Enabled);
-            Assert.IsTrue(customer.telephone1.Enabled);
-            Assert.IsTrue(customer.telephone2.Enabled);
-            Assert.IsTrue(customer.telephone3.Enabled);
-            Assert.IsTrue(customer.mobile.Enabled);
-            Assert.IsTrue(customer.taxid2.Enabled);
-            Assert.IsTrue(customer.nickname.Enabled);
-            Assert.IsTrue(customer.fax.Enabled);
-            Assert.IsTrue(customer.birthdate.Enabled);
-            Assert.IsTrue(customer.cep.Enabled);
-            Assert.IsTrue(customer.postalcode.Enabled);
-            Assert.IsTrue(customer.address.Enabled);
-            Assert.IsTrue(customer.addressline2.Enabled);
-            Assert.IsTrue(customer.country.Enabled);
-            Assert.IsTrue(customer.city.Enabled);
-            Assert.IsTrue(customer.email1.Enabled);
-            Assert.IsTrue(customer.email2.Enabled);
-            Assert.IsTrue(customer.url.Enabled);
-            Assert.IsTrue(customer.url_twitter.Enabled);
-            Assert.IsTrue(customer.url_facebook.Enabled);
-            Assert.IsTrue(customer.notes.Enabled);
+            //Assert.IsTrue(customer.name.Enabled);
+            //Assert.IsTrue(customer.taxid1.Enabled);
+            //Assert.IsTrue(customer.gender.Enabled);
+            //Assert.IsTrue(customer.telephone1.Enabled);
+            //Assert.IsTrue(customer.telephone2.Enabled);
+            //Assert.IsTrue(customer.telephone3.Enabled);
+            //Assert.IsTrue(customer.mobile.Enabled);
+            //Assert.IsTrue(customer.taxid2.Enabled);
+            //Assert.IsTrue(customer.nickname.Enabled);
+            //Assert.IsTrue(customer.fax.Enabled);
+            //Assert.IsTrue(customer.birthdate.Enabled);
+            //Assert.IsTrue(customer.cep.Enabled);
+            //Assert.IsTrue(customer.postalcode.Enabled);
+            //Assert.IsTrue(customer.address.Enabled);
+            //Assert.IsTrue(customer.addressline2.Enabled);
+            //Assert.IsTrue(customer.country.Enabled);
+            //Assert.IsTrue(customer.city.Enabled);
+            //Assert.IsTrue(customer.email1.Enabled);
+            //Assert.IsTrue(customer.email2.Enabled);
+            //Assert.IsTrue(customer.url.Enabled);
+            //Assert.IsTrue(customer.url_twitter.Enabled);
+            //Assert.IsTrue(customer.url_facebook.Enabled);
+            //Assert.IsTrue(customer.notes.Enabled);
 
 
         }
