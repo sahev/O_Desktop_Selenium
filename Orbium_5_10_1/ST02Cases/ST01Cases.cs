@@ -18,11 +18,11 @@ using Unit_Desktop;
 using System.Diagnostics.Eventing.Reader;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ST01CustomerEdit
+namespace ST01Desktop
 
 {
 
-    public class CT02ValidarCamposObrigatorios
+    public class ST01Cases
     {
         private IWebDriver driver;
         private WebDriverWait wait;
@@ -53,31 +53,39 @@ namespace ST01CustomerEdit
         }
 
         [Test]
-        public void CT01ValidarCamposObrigatoriosTela()
+        public void CAS01ValidarLayoutTela()
         {
 
-            // Módulo Clientes
-            driver.FindElement(By.CssSelector("#navbar > ul > li:nth-child(4) > a")).Click();
 
-            // switch para o frame Clientes
-            driver.SwitchTo().Frame(1);
 
-            // aguarda o item ser visivel para continuação da thread
-            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")));
 
-            // botão Nova pessoa
-            driver.FindElement(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")).Click();
+            driver.FindElement(By.CssSelector("#navbar > ul > li:nth-child(6) > a")).Click();
 
-            // switch para o pop-up
-            driver.SwitchTo().Window(driver.WindowHandles[1]);
+            //driver.SwitchTo().Frame(1);
 
-            // botão Salvar
-            driver.FindElement(By.CssSelector("#tbr_i0")).Click();
+            Thread.Sleep(5000);
 
-            // Validação dos campos obrigatórios
-            StringAssert.Contains("Por favor verifique os seguintes itens:", driver.FindElement(By.Id("slideMain_valSummary")).Text);
+            driver.FindElement(By.XPath("//*[@id='slideResult_txtSearchValue']")).SendKeys("QA - 20200521000018");
+
+            //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")));
+
+            driver.FindElement(By.CssSelector("#slideResult_grdResults > tbody > tr.resultsDGitem > td:nth-child(1) > a")).Click();
+
+            //driver.SwitchTo().Window(driver.WindowHandles[1]);
+
+
+            //Page object
+
+
+
+            //driver.FindElement(By.CssSelector("#nav-menu-item-5643 .item_text")).Click();
+
+            //Thread.Sleep(5000);
+
+
+
 
         }
+
     }
 }
-

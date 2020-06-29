@@ -18,15 +18,15 @@ using Unit_Desktop;
 using System.Diagnostics.Eventing.Reader;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ST01CustomerEdit
+namespace ST01Desktop
 
 {
 
-    public class CT01ValidarLayout
+    public class ST01Customers
     {
         private IWebDriver driver;
         private WebDriverWait wait;
-       
+
         public IDictionary<string, object> vars { get; private set; }
         private IJavaScriptExecutor js;
 
@@ -53,13 +53,40 @@ namespace ST01CustomerEdit
         }
 
         [Test]
-        public void CT01ValidarLayoutTela()
+        public void CST01ValidarCamposObrigatoriosTela()
         {
-            
+
+            // Módulo Clientes
+            driver.FindElement(By.CssSelector("#navbar > ul > li:nth-child(4) > a")).Click();
+
+            // switch para o frame Clientes
+            driver.SwitchTo().Frame(1);
+
+            // aguarda o item ser visivel para continuação da thread
+            wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")));
+
+            // botão Nova pessoa
+            driver.FindElement(By.XPath("//*[@id='tbr_t0']/tbody/tr/td[2]")).Click();
+
+            // switch para o pop-up
+            driver.SwitchTo().Window(driver.WindowHandles[1]);
+
+            // botão Salvar
+            driver.FindElement(By.CssSelector("#tbr_i0")).Click();
+
+            // Validação dos campos obrigatórios
+            StringAssert.Contains("Por favor verifique os seguintes itens:", driver.FindElement(By.Id("slideMain_valSummary")).Text);
+
+        }
+        
+        [Test]
+        public void CST01ValidarLayoutTela()
+        {
+
             //Thread.Sleep(5000);
             // EXPLICT WAIT
             //wait.Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(By.CssSelector("#navbar > ul > li:nth-child(4) > a")));
-            
+
             driver.FindElement(By.CssSelector("#navbar > ul > li:nth-child(4) > a")).Click();
 
             driver.SwitchTo().Frame(1);
@@ -111,3 +138,4 @@ namespace ST01CustomerEdit
 
     }
 }
+

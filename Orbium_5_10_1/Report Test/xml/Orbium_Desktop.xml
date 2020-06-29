@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="3" result="Failed" total="3" passed="1" failed="2" inconclusive="0" skipped="0" asserts="1" engine-version="3.11.1.0" clr-version="4.0.30319.42000" start-time="2020-06-29 01:20:17Z" end-time="2020-06-29 01:21:35Z" duration="77.325010">
+  <command-line><![CDATA[.\References\nunit3-console.exe  "C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\bin\Debug\Orbium_Desktop_5_10_1.dll" --result="Orbium_Desktop.xml;format=nunit3" --work=".\xml]]></command-line>
+  <test-suite type="Assembly" id="0-1005" name="Orbium_Desktop_5_10_1.dll" fullname="C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\bin\Debug\Orbium_Desktop_5_10_1.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2020-06-29 01:20:18Z" end-time="2020-06-29 01:21:35Z" duration="76.664528" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.1.7601.65536" platform="Win32NT" cwd="C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\Report Test" machine-name="48594789-PC" user="48594789" user-domain="48594789-PC" culture="pt-BR" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value=".\xml" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="RuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="14000" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1006" name="ST01Desktop" fullname="ST01Desktop" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2020-06-29 01:20:18Z" end-time="2020-06-29 01:21:35Z" duration="76.640368" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1003" name="ST01Cases" fullname="ST01Desktop.ST01Cases" classname="ST01Desktop.ST01Cases" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2020-06-29 01:20:18Z" end-time="2020-06-29 01:20:50Z" duration="32.304447" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1004" name="CAS01ValidarLayoutTela" fullname="ST01Desktop.ST01Cases.CAS01ValidarLayoutTela" methodname="CAS01ValidarLayoutTela" classname="ST01Desktop.ST01Cases" runstate="Runnable" seed="284751763" result="Failed" label="Error" start-time="2020-06-29 01:20:18Z" end-time="2020-06-29 01:20:50Z" duration="32.290652" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='slideResult_txtSearchValue']"}
+  (Session info: chrome=83.0.4103.116)]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at ST01Desktop.ST01Cases.CAS01ValidarLayoutTela() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST02Cases\ST01Cases.cs:line 68]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="0-1000" name="ST01Customers" fullname="ST01Desktop.ST01Customers" classname="ST01Desktop.ST01Customers" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-06-29 01:20:50Z" end-time="2020-06-29 01:21:35Z" duration="44.327116" total="2" passed="1" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1001" name="CST01ValidarCamposObrigatoriosTela" fullname="ST01Desktop.ST01Customers.CST01ValidarCamposObrigatoriosTela" methodname="CST01ValidarCamposObrigatoriosTela" classname="ST01Desktop.ST01Customers" runstate="Runnable" seed="1562813452" result="Passed" start-time="2020-06-29 01:20:50Z" end-time="2020-06-29 01:21:08Z" duration="17.403178" asserts="1" />
+        <test-case id="0-1002" name="CST01ValidarLayoutTela" fullname="ST01Desktop.ST01Customers.CST01ValidarLayoutTela" methodname="CST01ValidarLayoutTela" classname="ST01Desktop.ST01Customers" runstate="Runnable" seed="915827756" result="Failed" label="Error" start-time="2020-06-29 01:21:08Z" end-time="2020-06-29 01:21:35Z" duration="26.923668" asserts="0">
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchWindowException : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.116)
+TearDown : OpenQA.Selenium.WebDriverException : chrome not reachable
+  (Session info: chrome=83.0.4103.116)]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at ST01Desktop.ST01Customers.CST01ValidarLayoutTela() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST01Customer\ST01Customers.cs:line 95
+--NoSuchWindowException
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass8_0.<VisibilityOfAllElementsLocatedBy>b__0(IWebDriver driver)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+--TearDown
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.get_WindowHandles()
+   at ST01Desktop.ST01Customers.TearDown() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST01Customer\ST01Customers.cs:line 48]]></stack-trace>
+          </failure>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

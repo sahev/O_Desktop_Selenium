@@ -62,13 +62,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comandos.cs" />
-    <Compile Include="ST01Customer\CT02ValidarCamposObrigatorios.cs" />
-    <Compile Include="ST01Customer\CT01ValidarLayout.cs" />
+    <Compile Include="ST01Customer\ST01Customers.cs" />
     <Compile Include="Page Object\Customer_Person_Edit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ST02Cases\ST01Cases.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Report Test\generate report.bat" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

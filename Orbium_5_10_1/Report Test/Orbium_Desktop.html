@@ -369,13 +369,13 @@
                                 <nav>
                                     <ul id='slide-out' class='side-nav fixed'>
                                         <li class='logo'><a href='http://reportunit.relevantcodes.com/'><span>ReportUnit</span></a></li>
-                                        <li><a class='waves-effect' href='./Index.html'>Index</a></li><li><a class='waves-effect' href='./CT01CustomerEdit.html'>CT01CustomerEdit</a></li>
+                                        <li><a class='waves-effect' href='./Index.html'>Index</a></li><li><a class='waves-effect' href='./Orbium_Desktop.html'>Orbium_Desktop</a></li>
                                     </ul>
                                     <a href='#' data-activates='slide-out' class='button-collapse'><i class='mdi-navigation-menu'></i></a>
                                     <div class='nav-main'>
                                         <div class='page-title'>
                                            <div class='logo'><a href='http://reportunit.relevantcodes.com/'><span>ReportUnit</span></a></div>
-                                            <span><i class='mdi-file-folder-open'></i>&nbsp;&nbsp;CT01CustomerEdit</span>
+                                            <span><i class='mdi-file-folder-open'></i>&nbsp;&nbsp;Orbium_Desktop</span>
                                             <a class='modal-trigger waves-effect waves-light run-info-icon tooltipped' data-position='left' data-tooltip='Run Info' href='#modal1'><i class='mdi-action-info-outline'></i></a>
                                             <a class='modal-trigger waves-effect waves-light console-logs-icon tooltipped' data-position='left' data-tooltip='Console Logs' href='#modal2'><i class='mdi-action-assignment'></i></a>
                                         </div>
@@ -457,13 +457,13 @@
                                             <div class='col s4'>
                             <div class='card-panel'>
                                 <div class='fixture-head'>
-                                    <span class='fixture-name'>CT01ValidarLayout</span>
-                                    <span class='fixture-result passed'>passed</span>
+                                    <span class='fixture-name'>ST01Cases</span>
+                                    <span class='fixture-result failed'>failed</span>
                                 </div>
                                 <div class='fixture-content'>
                                     <div class='card fixture-status-message'>
                                         <div class='card-content'>
-                                            <!--%FIXTURESTATUSMSG%-->
+                                            One or more child tests had errors
                                         </div>
                                     </div>
                                     <table class='bordered'>
@@ -472,29 +472,30 @@
                                             <th>Status</th>
                                         </tr>
                                         <tr>
-                            <td class='test-name'>CT01ValidarLayoutTela</td>
-                            <td class='passed'>passed</td>
+                            <td class='test-name'>CAS01ValidarLayoutTela</td>
+                            <td class='failed'>failed<pre>OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='slideResult_txtSearchValue']"}
+  (Session info: chrome=83.0.4103.116) ->    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)   at ST01Desktop.ST01Cases.CAS01ValidarLayoutTela() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST02Cases\ST01Cases.cs:line 68</pre></td>
                             <td class='test-features '></td>
                         </tr>
                         
                                     </table>
                                 </div>
                                 <div  class='fixture-footer'>
-                                    <span  alt='Fixture started at time' title='Fixture started at time' class='startedAt'><i class='mdi-device-access-time'></i>2020-06-29 00:26:15</span>
-                                    <span  alt='Fixture ended at time' title='Fixture ended at time' class='endedAt'><i class='mdi-device-access-time'></i>2020-06-29 00:26:33</span>
+                                    <span  alt='Fixture started at time' title='Fixture started at time' class='startedAt'><i class='mdi-device-access-time'></i>2020-06-29 01:20:18</span>
+                                    <span  alt='Fixture ended at time' title='Fixture ended at time' class='endedAt'><i class='mdi-device-access-time'></i>2020-06-29 01:20:50</span>
                                 </div>
                             </div>
                         </div>
                         <div class='col s4'>
                             <div class='card-panel'>
                                 <div class='fixture-head'>
-                                    <span class='fixture-name'>CT02ValidarCamposObrigatorios</span>
-                                    <span class='fixture-result passed'>passed</span>
+                                    <span class='fixture-name'>ST01Customers</span>
+                                    <span class='fixture-result failed'>failed</span>
                                 </div>
                                 <div class='fixture-content'>
                                     <div class='card fixture-status-message'>
                                         <div class='card-content'>
-                                            <!--%FIXTURESTATUSMSG%-->
+                                            One or more child tests had errors
                                         </div>
                                     </div>
                                     <table class='bordered'>
@@ -503,16 +504,26 @@
                                             <th>Status</th>
                                         </tr>
                                         <tr>
-                            <td class='test-name'>CT01ValidarCamposObrigatoriosTela</td>
+                            <td class='test-name'>CST01ValidarCamposObrigatoriosTela</td>
                             <td class='passed'>passed</td>
+                            <td class='test-features '></td>
+                        </tr>
+                        <tr>
+                            <td class='test-name'>CST01ValidarLayoutTela</td>
+                            <td class='failed'>failed<pre>OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds
+  ----> OpenQA.Selenium.NoSuchWindowException : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=83.0.4103.116)
+TearDown : OpenQA.Selenium.WebDriverException : chrome not reachable
+  (Session info: chrome=83.0.4103.116) ->    at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)   at ST01Desktop.ST01Customers.CST01ValidarLayoutTela() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST01Customer\ST01Customers.cs:line 95--NoSuchWindowException   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass8_0.<VisibilityOfAllElementsLocatedBy>b__0(IWebDriver driver)   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)--TearDown   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)   at OpenQA.Selenium.Remote.RemoteWebDriver.get_WindowHandles()   at ST01Desktop.ST01Customers.TearDown() in C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\ST01Customer\ST01Customers.cs:line 48</pre></td>
                             <td class='test-features '></td>
                         </tr>
                         <!--%INSERTTEST%-->
                                     </table>
                                 </div>
                                 <div  class='fixture-footer'>
-                                    <span  alt='Fixture started at time' title='Fixture started at time' class='startedAt'><i class='mdi-device-access-time'></i>2020-06-29 00:26:33</span>
-                                    <span  alt='Fixture ended at time' title='Fixture ended at time' class='endedAt'><i class='mdi-device-access-time'></i>2020-06-29 00:26:50</span>
+                                    <span  alt='Fixture started at time' title='Fixture started at time' class='startedAt'><i class='mdi-device-access-time'></i>2020-06-29 01:20:50</span>
+                                    <span  alt='Fixture ended at time' title='Fixture ended at time' class='endedAt'><i class='mdi-device-access-time'></i>2020-06-29 01:21:35</span>
                                 </div>
                             </div>
                         </div>
@@ -523,15 +534,15 @@
                             </div>
                             <div id='modal1' class='modal'>
                                 <div class='modal-content'>
-                                    <h4>CT01CustomerEdit RunInfo</h4>
+                                    <h4>Orbium_Desktop RunInfo</h4>
                                     <table class='bordered'>
                                         <tr><th>Param</th><th>Value</th></tr>
                                         <tr>
-                            <td>TestResult File</td><td>C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\Report Test\xml\CT01CustomerEdit.xml</td>
+                            <td>TestResult File</td><td>.\xml\Orbium_Desktop.xml</td>
                         </tr><tr>
-                            <td>Last Run</td><td>28 jun 2020 21:26</td>
+                            <td>Last Run</td><td>28 jun 2020 22:21</td>
                         </tr><tr>
-                            <td>Duration</td><td>34426577 ms</td>
+                            <td>Duration</td><td>76664528 ms</td>
                         </tr><tr>
                             <td>User</td><td>48594789</td>
                         </tr><tr>
@@ -552,9 +563,9 @@
                                 <div class='modal-footer'>
                                     <a href='#!' class='modal-action modal-close waves-effect waves-green btn-flat'>Close</a>
                                 </div>
-                                <div class='hidden total-tests'>2</div>
-                                <div class='hidden total-passed'>2</div>
-                                <div class='hidden total-failed'>0</div>
+                                <div class='hidden total-tests'>3</div>
+                                <div class='hidden total-passed'>1</div>
+                                <div class='hidden total-failed'>2</div>
                                 <div class='hidden total-inconclusive'>0</div>
                                 <div class='hidden total-errors'>0</div>
                                 <div class='hidden total-skipped'>0</div>
@@ -562,7 +573,7 @@
                             <div id='modal2' class='modal'>
                                 <div class='modal-content'>
                                     <h4>Console Log</h4>
-                                    [2020.06.28 21:26:50][Info] The file C:\working\Orbium_5_10_1\Orbium_5_10_1\Orbium_5_10_1\Report Test\xml\CT01CustomerEdit.xml contains NUnit test results<br />[2020.06.28 21:26:50][Info] Number of tests: 2<br />[2020.06.28 21:26:50][Info] Processing root and test-suite elements...<br />[2020.06.28 21:26:50][Info] Building fixture blocks...<br />
+                                    [2020.06.28 22:21:35][Info] The file .\xml\Orbium_Desktop.xml contains NUnit test results<br />[2020.06.28 22:21:35][Info] Number of tests: 3<br />[2020.06.28 22:21:35][Info] Processing root and test-suite elements...<br />[2020.06.28 22:21:35][Info] Building fixture blocks...<br />
                                 </div>
                                 <div class='modal-footer'>
                                     <a href='#!' class='modal-action modal-close waves-effect waves-green btn-flat'>Close</a>
